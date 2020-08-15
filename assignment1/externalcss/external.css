@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    
+}
+.flexcontainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: rgb(226, 133, 20);
+}
+.child1{
+    flex:1;
+    background: linear-gradient(to right, rgb(230, 174, 174) , rgb(140, 222, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    color: red;
+    
+}
+.child1:hover{
+    color: palevioletred;
+    font-size: 15rem;
+    transition: ease-in 0.1s;
+}
+.child2{
+    flex:1;
+    display: flex;
+     flex-direction: column;
+    background: linear-gradient(to right,  rgb(140, 222, 255),rgb(230, 174, 174));
+   
+    font-size: 10rem;
+    color: rgb(235, 72, 72);
+  
+   
+}
+.inner1
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+.inner1:hover{
+    font-size: 7rem;
+    transition: ease-in 0.1s;
+    color:red;
+}
+.inner2{
+    flex: 1;
+}
+.inner2:hover{
+    font-size: 6rem;
+    transition: ease-in 0.1s;
+    color:red;
+}
+.inner3{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.inner3:hover{
+    font-size: 9rem;
+    transition: ease-in 0.1s;
+    color:red;
+}
+.child3{
+    flex:1;
+    background: linear-gradient(to right, rgb(230, 174, 174) , rgb(140, 222, 255));
+    flex:1;
+    display: flex;
+     flex-direction: column;
+     font-size: 10rem;
+    color: rgb(235, 72, 72);
+}
