@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+            font-family: 'lato', sans-serif;
+            color: #fff;
+            background: url("1.jpeg");
+
+        }
+
+        .container {
+            background: rgba(58, 63, 68, 0.5);
+            border-radius: 45px;
+            box-shadow: 0 5.5px 0 5.5px rgba(0, 0, 0, 0.6);
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-family: "museo-slab";
+            font-size: 20px;
+            text-align: center;
+            padding: 20px 20px 0;
+            margin: 0;
+        }
+
+        .login-item {
+            color: #ffff;
+            padding: 25px 25px 0;
+            margin: 20px 20px 0;
+            border-radius: 3px;
+            height: 40vh;
+        }
+
+        input {
+            border: 0;
+            color: inherit;
+            font: inherit;
+        }
+
+        .form input[type="password"],
+        .form input[type="text"],
+        .form input[type="submit"] {
+            width: 100%;
+            border-radius: 0.25rem;
+        }
+
+        .form-login input[type="submit"] {
+            background-color: #00B9BC;
+            color: #eee;
+            font-weight: bold;
+
+        }
+
+        .form-field {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        .text--center {
+            text-align: center;
+        }
+
+        .c-box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #Remember_Me {
+            zoom: 1.5;
+        }
+
+        #keep_m_s_in {
+            zoom: 1.5;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">Login <Form></Form>
+        </div>
+        <div class="login-item">
+            <form action="" method="post" class="form form-login">
+                <div class="form-field">
+                    <label class="user" for="login-username"></label>
+                    <input id="login-username" type="text" class="form-input" placeholder="Username" required
+                        minlength="3" maxlength="12" pattern="[A-Za-z0-9@]{1}">
+                </div>
+
+                <div class=" form-field">
+                    <label class="lock" for="login-password"></label>
+                    <input id="login-password" type="password" class="form-input" placeholder="Password" minlength="5"
+                        maxlength="12" required pattern="[A-Za-z0-9!#$%^&*()_-+=]">
+                </div>
+
+                <div class="form-field">
+
+                    <input type="submit" value="Log in">
+                </div>
+
+            </form>
+            <div class="c-box">
+                <input type="checkbox" id="Remember_Me" value="Remember_Me">
+                <label for="Remember_Me">Remember</label><br>
+
+                <input type="checkbox" id="keep_m_s_in" value="Bike">
+                <label for="keep_m_s_in">Keep Me Signed In </label><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
