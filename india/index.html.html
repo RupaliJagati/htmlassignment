@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cf6dec5b11.js" crossorigin="anonymous"></script>
+    <script src="searchbar.js"></script>
+    <style>
+      body{
+        background-image: url("wallpaper4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      i{
+        padding-top: 8px;color: red;
+
+      }
+      i:hover{
+        font-size: 50px;
+      }
+
+    </style>
+</head>
+<body>
+   <div class="container-fluid">
+       <div class="row bg-light align-items-center" style="height:10vh;">
+           <div class=" col-md-3 " style="color: rgb(92, 45, 45);font-size: 2rem;">I Love My INDIA</div>
+           <div class="col-md-6 " style="display:flex;justify-content: center;font-size: 2rem;color: brown;">
+              India Nahi Bharat Bolo
+           </div>
+           <div class="col-md-3" style="display:flex;justify-content: center;font-size: 2rem;color: brown;">
+            <i class="fas fa-heart" ></i>JAI HIND</div>
+       </div>
+
+       <div class="row justify-content-center " >
+            <div class=" col-12 col-md-6 d-flex flex-column">
+                <div class="row border bg-secondary"style="height:50vh">
+                       <div class="col" 
+                          style="background-image: url(india3.jpg);background-size: cover;">
+                       </div>
+                 </div>
+                 
+                 <div class="row">
+                        <div class="col-2 p-0">
+                            <button
+                            onclick="clickMe()" id="likebtn"
+                            class="btn btn btn-primary btn-block"
+                          >
+                            Like
+                          </button>
+                        </div>
+                        <div class="col-2 p-0">
+                          <button
+                          onclick="dislike()"
+                          class="btn btn btn-dark btn-block"
+                        >
+                          DisLike
+                        </button>
+                      </div>
+                        <div class="col-5 p-0">
+                            <input type="text" class="form-control "
+                             placeholder="enter comment"/>
+                        </div>
+                        <div class="col-3 p-0">
+                            <button onclick="commentMe(this)"  
+                            class="btn  btn-outline-secondary btn-block">comment</button>
+                        </div>
+                 </div>
+                
+                  <div class="d-flex flex-column" id="commentContainer">
+                        <div class="row border mt-1 "  >
+                          <div class="col-10 p-1 "style="background-color: rgb(200, 165, 233);
+                          font-size: 1.1rem;">Sample comment here</div>
+                          <div class="col-2 p-0">
+                            <button  onclick="deleteComment(this)" class="btn  btn-block btn-outline-secondary
+                             btn-danger text-light" style="font-size: 1.1rem;">
+                              Delete
+                            </button>
+                          </div>
+                        </div>
+                     </div>
+                
+               
+             </div>
+
+         </div>
+   </div>
+
+</body>
+</html>
